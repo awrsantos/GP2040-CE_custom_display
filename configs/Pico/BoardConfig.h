@@ -95,4 +95,27 @@
 #define BUTTON_LAYOUT BUTTON_LAYOUT_STICKLESS
 #define BUTTON_LAYOUT_RIGHT BUTTON_LAYOUT_STICKLESSB
 
+// Grade 3x5 (15 botões) alinhada na tela OLED 128x64
+// Sintaxe: { ElementType, { x, y, radius_x, radius_y, stroke, fill, gamepad_mask, GP_SHAPE_ELLIPSE } }
+#define DEFAULT_BOARD_LAYOUT_A {\
+    /*fileira 1, coluna 1*/   { GP_ELEMENT_BTN_BUTTON, { 16, 23, 5, 5, 1, 0, GAMEPAD_MASK_S1, GP_SHAPE_ELLIPSE } },\
+    /*fileira 1, coluna 2*/   { GP_ELEMENT_BTN_BUTTON, { 40, 23, 5, 5, 1, 0, GAMEPAD_MASK_S2, GP_SHAPE_ELLIPSE } },\
+    /*fileira 1, coluna 3*/   { GP_ELEMENT_BTN_BUTTON, { 64, 23, 5, 5, 1, 0, GAMEPAD_MASK_L3, GP_SHAPE_ELLIPSE } },\
+    /*fileira 1, coluna 4*/   { GP_ELEMENT_BTN_BUTTON, { 88, 23, 5, 5, 1, 0, GAMEPAD_MASK_R3, GP_SHAPE_ELLIPSE } },\
+    /*fileira 1, coluna 5*/   { GP_ELEMENT_DIR_BUTTON, { 112, 23, 5, 5, 1, 0, GAMEPAD_MASK_UP, GP_SHAPE_ELLIPSE } },\
+    /*fileira 2, coluna 1*/   { GP_ELEMENT_BTN_BUTTON, { 16, 39, 5, 5, 1, 0, GAMEPAD_MASK_B1, GP_SHAPE_ELLIPSE } },\
+    /*fileira 2, coluna 2*/   { GP_ELEMENT_BTN_BUTTON, { 40, 39, 5, 5, 1, 0, GAMEPAD_MASK_B2, GP_SHAPE_ELLIPSE } }\
+}
+
+#define DEFAULT_BOARD_LAYOUT_B {\
+    /*fileira 2, coluna 3*/   { GP_ELEMENT_BTN_BUTTON, { 64, 39, 5, 5, 1, 0, GAMEPAD_MASK_B3, GP_SHAPE_ELLIPSE } },\
+    /*fileira 2, coluna 4*/   { GP_ELEMENT_BTN_BUTTON, { 88, 39, 5, 5, 1, 0, GAMEPAD_MASK_B4, GP_SHAPE_ELLIPSE } },\
+    /*fileira 2, coluna 5*/   { GP_ELEMENT_DIR_BUTTON, { 112, 39, 5, 5, 1, 0, GAMEPAD_MASK_DOWN, GP_SHAPE_ELLIPSE } },\
+    /*fileira 3, coluna 1*/   { GP_ELEMENT_BTN_BUTTON, { 16, 55, 5, 5, 1, 0, GAMEPAD_MASK_L1, GP_SHAPE_ELLIPSE } },\
+    /*fileira 3, coluna 2*/   { GP_ELEMENT_BTN_BUTTON, { 40, 55, 5, 5, 1, 0, GAMEPAD_MASK_R1, GP_SHAPE_ELLIPSE } },\
+    /*fileira 3, coluna 3*/   { GP_ELEMENT_BTN_BUTTON, { 64, 55, 5, 5, 1, 0, GAMEPAD_MASK_L2, GP_SHAPE_ELLIPSE } },\
+    /*fileira 3, coluna 4*/   { GP_ELEMENT_BTN_BUTTON, { 88, 55, 5, 5, 1, 0, GAMEPAD_MASK_R2, GP_SHAPE_ELLIPSE } },\
+    /*fileira 3, coluna 5*/   { GP_ELEMENT_DIR_BUTTON, { 112, 55, 5, 5, 1, 0, GAMEPAD_MASK_LEFT, GP_SHAPE_ELLIPSE } }\
+}
+
 #endif
